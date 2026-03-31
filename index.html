@@ -2,112 +2,75 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Night City | Access Point</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Restaurace Zeland – Projekt</title>
     <style>
-        :root {
-            --neon-yellow: #fcee0a;
-            --neon-blue: #00f2ff;
-            --neon-pink: #ff00ff;
-            --dark-bg: #050505;
-        }
-    }
-</style>
+        
         body {
-            background-color: var(--dark-bg);
-            color: white;
-            font-family: 'Orbitron', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            background-image: 
-                linear-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
-            background-size: 50px 50px;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.2) 50%), 
-                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-            background-size: 100% 2px, 3px 100%;
-            pointer-events: none;
-        }
-
-        .login-box {
+            background-color: #E8F5E9; 
+            color: #2E7D32; 
             text-align: center;
-            border: 3px solid var(--neon-yellow);
-            padding: 50px;
-            background: rgba(0, 0, 0, 0.9);
-            box-shadow: 0 0 30px rgba(252, 238, 10, 0.2);
-            position: relative;
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
         }
 
-        h1 {
-            font-size: 2.5rem;
-            color: var(--neon-yellow);
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            letter-spacing: 3px;
-        }
-
-        p {
-            color: var(--neon-blue);
-            margin-bottom: 30px;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-        }
-
-        .enter-btn {
-            background: var(--neon-yellow);
-            color: black;
-            border: none;
-            padding: 15px 40px;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: bold;
-            font-size: 1.2rem;
-            text-decoration: none;
-            cursor: pointer;
-            transition: 0.3s;
-            display: inline-block;
-            clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
-        }
-
-        .enter-btn:hover {
-            background: var(--neon-pink);
+        header {
+            background-color: #2E7D32;
             color: white;
-            box-shadow: 0 0 20px var(--neon-pink);
-            transform: scale(1.05);
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
         }
 
-        .warning {
+        
+        a.button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 25px;
+            background-color: #2E7D32;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        a.button:hover {
+            background-color: #1B5E20;
+        }
+      
+        iframe {
+            border: 3px solid #2E7D32;
+            border-radius: 10px;
+            width: 90%;
+            height: 600px;
+            margin-bottom: 30px;
+        }
+
+        
+        footer {
             margin-top: 20px;
-            font-size: 0.7rem;
-            color: #444;
-            text-transform: uppercase;
+            font-size: 14px;
+            color: gray;
         }
     </style>
 </head>
 <body>
 
-    <div class="overlay"></div>
+<header>
+    Restaurace Zeland – Projekt
+</header>
 
-    <div class="login-box">
-        <h1>ACCESS GRANTED</h1>
-        <p>CHIP DETECTED: V_SAMURAI_2077</p>
-        
-        <a href="index2.html" class="enter-btn">ENTER NIGHT CITY</a>
 
-        <div class="warning">
-            Authorized Personnel Only. Arasaka Corp © 2077
-        </div>
-    </div>
+<a class="button" href="https://www.restauracezeland.cz" target="_blank">
+    Navštivte oficiální stránku restaurace
+</a>
+
+
+<iframe src="Zeland.pdf"></iframe>
+
+<footer>
+    Projekt vytvořen z PDF dokumentu z Overleaf
+</footer>
 
 </body>
 </html>
