@@ -2,75 +2,73 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Restaurace Zeland – Projekt</title>
+    <title>Úvodní stránka – Matěj Pavlík</title>
     <style>
-        
+        /* Celá stránka */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #E8F5E9; /* světlá zelená */
+            color: #2E7D32; /* tmavě zelená */
             margin: 0;
-            background-color: #E8F5E9; 
-            color: #2E7D32; 
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
         }
 
-        header {
-            background-color: #2E7D32;
-            color: white;
-            padding: 20px;
-            font-size: 28px;
+        /* Nadpis s tvým jménem */
+        h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
             font-weight: bold;
         }
 
-        
-        a.button {
+        /* Styl tlačítka */
+        .button {
             display: inline-block;
-            margin: 20px 0;
-            padding: 12px 25px;
-            background-color: #2E7D32;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
+            padding: 20px 40px;
+            font-size: 20px;
             font-weight: bold;
-            transition: background-color 0.3s;
+            color: white;
+            background-color: #2E7D32;
+            text-decoration: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, transform 0.2s;
         }
 
-        a.button:hover {
+        .button:hover {
             background-color: #1B5E20;
-        }
-      
-        iframe {
-            border: 3px solid #2E7D32;
-            border-radius: 10px;
-            width: 90%;
-            height: 600px;
-            margin-bottom: 30px;
+            transform: translateY(-3px);
         }
 
-        
+        /* Footer s upozorněním */
         footer {
-            margin-top: 20px;
-            font-size: 14px;
-            color: gray;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 3px solid #2E7D32;
+            font-size: 16px;
+            color: #2E7D32;
+            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-<header>
-    Restaurace Zeland – Projekt
-</header>
+    <!-- Nadpis je tvé jméno -->
+    <h1>Matěj Pavlík</h1>
 
+    <!-- Tlačítko vede na cpp.html -->
+    <a class="button" href="cpp.html">Přejít na projekt – Restaurace Zeland</a>
 
-<a class="button" href="https://www.restauracezeland.cz" target="_blank">
-    Navštivte oficiální stránku restaurace
-</a>
-
-
-<iframe src="Zeland.pdf"></iframe>
-
-<footer>
-    Projekt vytvořen z PDF dokumentu z Overleaf
-</footer>
+    <!-- Footer s upozorněním -->
+    <footer>
+        Jelikož mi kód absolutně rozházel moji úvodní stránku, musel jsem ji smazat a dát tuto stránku jako úvodní.
+    </footer>
 
 </body>
 </html>
