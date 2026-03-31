@@ -38,6 +38,7 @@
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             transition: background-color 0.3s, transform 0.2s;
+            margin-bottom: 15px;
         }
 
         .button:hover {
@@ -45,15 +46,16 @@
             transform: translateY(-3px);
         }
 
-        /* Footer s upozorněním */
-        footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 3px solid #2E7D32;
-            font-size: 16px;
+        /* Textový odkaz */
+        .text-link {
             color: #2E7D32;
-            width: 100%;
-            text-align: center;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .text-link:hover {
+            color: #1B5E20;
         }
     </style>
 </head>
@@ -65,10 +67,9 @@
     <!-- Tlačítko vede na cpp.html -->
     <a class="button" href="cpp.html">Přejít na projekt – Restaurace Zeland</a>
 
-    <!-- Footer s upozorněním -->
-    <footer>
-        Jelikož mi kód absolutně rozházel moji úvodní stránku, musel jsem ji smazat a dát tuto stránku jako úvodní.
-    </footer>
+    <!-- Textový odkaz na stejnou stránku cpp.html -->
+    <br>
+    <a class="text-link" href="cpp.html">Nebo klikněte zde pro projekt o Zelandu</a>
 
 </body>
 </html>
